@@ -100,7 +100,7 @@ export default function Home() {
         </Section>
       </main>
       <footer className="mx-auto w-full max-w-3xl px-6 py-8 text-sm text-foreground/40">
-        © {new Date().getFullYear()} {profile.name}
+        {`© ${new Date().getFullYear()} ${profile.name}`}
       </footer>
     </>
   );
