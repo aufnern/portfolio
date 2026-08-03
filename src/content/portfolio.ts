@@ -16,7 +16,7 @@ export const profile = {
 };
 
 export const socials = [
-  { label: "GitHub", href: "https://github.com/aufnern" },
+  { label: "GitHub", href: "https://github.com/noauf" },
   { label: "Email", href: `mailto:${profile.email}` },
 ];
 
@@ -28,27 +28,36 @@ export type Project = {
   repo?: string;
 };
 
-// Replace these with your own projects — school projects and things you built
-// for fun both count.
 export const projects: Project[] = [
   {
-    title: "Project One",
+    title: "Transmute",
     description:
-      "A short description of what you built, the problem it solves, and what you learned along the way.",
-    tags: ["Add", "your", "stack"],
-    repo: "https://github.com/aufnern",
+      "A universal file converter that runs entirely on your machine — 70+ formats across images, documents, audio, video, and data, with no uploads and no server. Ships as both a web app and a CLI.",
+    tags: ["TypeScript", "Go", "Web", "CLI"],
+    href: "https://transmute-everything.netlify.app",
+    repo: "https://github.com/noauf/Transmute",
   },
   {
-    title: "Project Two",
+    title: "Typist",
     description:
-      "A school project from HTL, or something you made in your free time. Two sentences is plenty.",
-    tags: ["Add", "your", "stack"],
-    repo: "https://github.com/aufnern",
+      "A local writing environment for Typst, built as a desktop app with Electron and Vite. Includes unit and end-to-end tests and packaged macOS releases.",
+    tags: ["TypeScript", "Electron", "Vite"],
+    repo: "https://github.com/noauf/typist",
+  },
+  {
+    title: "Firefly Aerospace Landing Page",
+    description:
+      "A multi-page marketing site for Firefly Aerospace's rockets, with a launch cost calculator, dark mode, and a responsive layout — built with plain HTML, CSS, and JavaScript.",
+    tags: ["HTML", "CSS", "JavaScript"],
+    repo: "https://github.com/noauf/FireFlyLandingPage",
   },
 ];
 
 export const skills = [
-  { group: "IT", items: ["Programming", "Linux", "Windows", "macOS", "Microsoft Office"] },
+  {
+    group: "Tech",
+    items: ["TypeScript", "Go", "HTML/CSS", "Electron", "Linux", "Windows", "macOS"],
+  },
   { group: "Languages", items: ["German (native)", "English (fluent)"] },
   { group: "Interests", items: ["Programming", "Photography", "Gaming", "Cycling", "Hiking"] },
 ];
